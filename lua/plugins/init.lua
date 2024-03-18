@@ -35,4 +35,13 @@ return {
 			require("copilot").setup({})
 		end,
 	},
+
+  {
+    "vidocqh/data-viewer.nvim",
+    event = "BufEnter",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "kkharji/sqlite.lua",
+    },
+  }
 }
