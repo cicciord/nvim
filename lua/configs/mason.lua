@@ -6,4 +6,5 @@ local options = {
 	"stylua",
 	"clangd",
 	"clang-format",
+  "ltex",
 }
