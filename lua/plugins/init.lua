@@ -24,7 +24,7 @@ return {
 
 	{
 		"williamboman/mason.nvim",
-		opts = require "nvchad.configs.mason",
+		opts = require("nvchad.configs.mason"),
 	},
 
 	{
@@ -36,12 +36,17 @@ return {
 		end,
 	},
 
-  {
-    "vidocqh/data-viewer.nvim",
-    event = "BufEnter",
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-      "kkharji/sqlite.lua",
-    },
-  }
+	{
+		"kristijanhusak/vim-dadbod-ui",
+		dependencies = {
+			{ "tpope/vim-dadbod", lazy = true },
+			{ "kristijanhusak/vim-dadbod-completion", ft = { "sql", "mysql", "plsql" }, lazy = true },
+		},
+		cmd = {
+			"DBUI",
+			"DBUIToggle",
+			"DBUIAddConnection",
+			"DBUIFindBuffer",
+		},
+	},
 }
