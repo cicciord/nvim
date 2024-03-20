@@ -5,6 +5,7 @@ local options = {
     lua = { "stylua" },
     c = { "clang-format" },
     javascript = { "prettier" },
+    rust = { "rustfmt" },
   },
 }
 
