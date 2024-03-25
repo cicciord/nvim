@@ -24,7 +24,7 @@ return {
 
 	{
 		"williamboman/mason.nvim",
-		opts = require("nvchad.configs.mason"),
+		opts = require("configs.mason"),
 	},
 
 	{
