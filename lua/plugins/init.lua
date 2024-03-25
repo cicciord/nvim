@@ -15,7 +15,7 @@ return {
 
 	{
 		"nvim-treesitter/nvim-treesitter",
-    opts = require("configs.treesitter"),
+		opts = require("configs.treesitter"),
 	},
 
 	-- In order to modify the `lspconfig` configuration:
