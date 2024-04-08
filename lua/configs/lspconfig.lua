@@ -11,6 +11,7 @@ local servers = {
 	"ltex",
 	"rust_analyzer",
 	"matlab_ls",
+  "solidity",
 }
 
 for _, lsp in ipairs(servers) do
@@ -38,4 +39,11 @@ lspconfig.matlab_ls.setup({
 		},
 	},
 	single_file_support = true,
+})
+
+lspconfig.solidity.setup({
+  cmd = { "nomicfoundation-solidity-language-server", "--stdio" },
+  filetypes = { "solidity" },
+--   root_dir = lspconfig.util.find_git_ancestor,
+--   single_file_support = true,
 })

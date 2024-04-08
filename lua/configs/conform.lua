@@ -6,6 +6,7 @@ local options = {
     c = { "clang-format" },
     javascript = { "prettier" },
     rust = { "rustfmt" },
+    tex = { "latexindent" },
   },
 }
 
