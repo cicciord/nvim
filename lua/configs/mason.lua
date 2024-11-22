@@ -21,6 +21,12 @@ local options = {
     "pyright",
     "black",
 
+    -- JSON
+    "json-lsp",
+
+    -- YAML
+    "yaml-language-server",
+
     -- Javascript / Typescript
     "typescript-language-server",
     "biome",

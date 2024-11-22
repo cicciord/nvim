@@ -3,6 +3,8 @@ local options = {
     "vim",
     "vimdoc",
 
+    "yaml",
+
     "lua",
 
     "html",

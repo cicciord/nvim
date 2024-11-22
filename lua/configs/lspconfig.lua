@@ -48,6 +48,35 @@ for _, lsp in ipairs(servers) do
   }
 end
 
+-- JSON
+lspconfig.jsonls.setup {
+  on_attach = nvlsp.on_attach,
+  on_init = nvlsp.on_init,
+  capabilities = nvlsp.capabilities,
+
+  settings = {
+    json = {
+      schemas = require("schemastore").json.schemas(),
+      validate = { enable = true },
+    },
+  },
+}
+
+-- YAML
+lspconfig.yamlls.setup {
+  on_attach = nvlsp.on_attach,
+  on_init = nvlsp.on_init,
+  capabilities = nvlsp.capabilities,
+
+  settings = {
+    yaml = {
+      schemas = {
+        ["https://json.schemastore.org/github-workflow.json"] = "/.github/workflows/*",
+      },
+    },
+  },
+}
+
 -- Javascript / Typescript
 lspconfig.ts_ls.setup {
   on_attach = nvlsp.on_attach,
