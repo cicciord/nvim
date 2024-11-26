@@ -11,6 +11,7 @@ local servers = {
 
   -- C
   "clangd",
+  "cmake",
 
   -- Rust
   "rust_analyzer",
@@ -27,6 +28,7 @@ local servers = {
 
   -- Solidity
   -- "solidity_ls",
+  -- "solidity",
 
   -- Docker
   "dockerls",
@@ -86,7 +88,7 @@ lspconfig.ts_ls.setup {
   cmd = { "typescript-language-server", "--stdio" },
 }
 -- Solidity
-lspconfig.solidity.setup {
+lspconfig.solidity_ls_nomicfoundation.setup {
   on_attach = nvlsp.on_attach,
   on_init = nvlsp.on_init,
   capabilities = nvlsp.capabilities,

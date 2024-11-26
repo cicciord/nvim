@@ -11,6 +11,7 @@ local options = {
     "css",
 
     "c",
+    "cmake",
 
     "rust",
 

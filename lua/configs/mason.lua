@@ -36,6 +36,7 @@ local options = {
     -- Solidity
     "nomicfoundation-solidity-language-server",
     "vscode-solidity-server",
+    -- "solidity",
 
     -- Docker
     "dockerfile-language-server",

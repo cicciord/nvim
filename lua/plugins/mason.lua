@@ -12,6 +12,7 @@ return {
 
       -- C
       "clangd",
+      "cmake-language-server",
 
       -- Rust
       "rust-analyzer",

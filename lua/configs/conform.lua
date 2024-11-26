@@ -5,7 +5,7 @@ local options = {
     html = { "prettier" },
     css = { "prettier" },
 
-    c = { "clangd" },
+    c = { "clang_format" },
 
     python = { "black" },
 
@@ -19,6 +19,8 @@ local options = {
     javascriptreact = { "prettier" },
     typescript = { "prettier" },
     typescriptreact = { "prettier" },
+
+    solidity = { "prettier" },
 
     tex = { "latexindent" },
 
